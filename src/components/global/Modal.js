@@ -1,4 +1,5 @@
 import React from "react";
+import propTypes from "prop-types";
 import ReactDOM from "react-dom";
 import styles from "./modal.module.css";
 
@@ -40,6 +41,18 @@ const GlobalModal = ({
     </>,
     document.getElementById("portal")
   );
+};
+GlobalModal.defaultProps = {
+  confirmText: "Yes",
+  cancelText: "No",
+};
+GlobalModal.propTypes = {
+  isModalOpen: propTypes.bool.isRequired,
+  closeModal: propTypes.func.isRequired,
+  onConfirm: propTypes.func.isRequired,
+  body: propTypes.string.isRequired,
+  confirmText: propTypes.string,
+  cancelText: propTypes.string,
 };
 
 export default GlobalModal;

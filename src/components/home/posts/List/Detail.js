@@ -1,4 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
+import propTypes from "prop-types";
 import { FaTrash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -31,6 +32,11 @@ const HomePostsListDetail = ({ post, onRemovePost }) => {
       </div>
     </li>
   );
+};
+
+HomePostsListDetail.propTypes = {
+  onRemovePost: propTypes.bool.isRequired,
+  post: propTypes.object.isRequired,
 };
 
 export default HomePostsListDetail;

@@ -1,9 +1,7 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { PostContext } from "../../contexts/PostContextProvider";
 
 const LayoutNavbar = () => {
-  const { posts } = useContext(PostContext);
   const [links, setLinks] = useState([
     { id: 1, to: "/", text: "Home" },
     { id: 2, to: "/posts", text: "Posts" },
