@@ -3,10 +3,12 @@
 * React Router
 * Context API
 * Functional Based Component
+* React Portal
 * Tailwind.css
 * Modular CSS Components
 * React Toastify
 * Axios for RESTAPI requests
+
 
 
 ### 
