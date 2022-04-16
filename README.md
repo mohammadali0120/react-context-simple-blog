@@ -1,6 +1,6 @@
 # Built with these tools
 * React.js V18
-* React Router
+* React Router V6
 * Context API
 * Functional Based Component
 * React Portal
