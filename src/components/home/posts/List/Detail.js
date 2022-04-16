@@ -35,7 +35,7 @@ const HomePostsListDetail = ({ post, onRemovePost }) => {
 };
 
 HomePostsListDetail.propTypes = {
-  onRemovePost: propTypes.bool.isRequired,
+  onRemovePost: propTypes.func.isRequired,
   post: propTypes.object.isRequired,
 };
 
